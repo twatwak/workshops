@@ -43,4 +43,4 @@ insert into club (club_name, count, overview) values ('ハイキング', 1, '月
 insert into club (club_name, count, overview) values ('ジャズ同好会', 2, '不定期で活動しています。\nそれぞれ楽器を持ち寄ってスタジオでセッションをします。');
 insert into club (club_name, count, overview) values ('料理部', 4, '和食、中華、洋食など定番の料理を練習します。\nレンタルキッチンをみんなでレンタルします。');
 -- userテーブル
-insert into user (name, age, email, club_id) values ('磯田直子', 35, 'sample5@sample5.com', 2);
+insert into user (name, age, email, club_id) values ('磯田直子', 35, 'sample5@sample5.com', 4);

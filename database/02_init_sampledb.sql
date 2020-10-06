@@ -34,10 +34,12 @@ create table user (
 ) engine=InnoDB default charset=utf8;
 
 -- サンプルレコードの登録
-insert into user (name, age, blood, email) values ("佐藤次郎", 67, "A", "sample3@ssample3.com");
-insert into user (id, name, age, blood, email) values (null, "山本京子", 38, 'AB', "sample4@ssample4.com");
-insert into user (name, age, blood, email) values ("佐々木四郎", 28, 'B', "sasaki@sasaki.com");	-- エラーとなる
--- insert into user values ("佐々木四郎", 28, 'B', "sasaki@sasaki.com");	-- エラーとなる
-insert into user (id, name, blood, email, age) values (11, "山田宏一", "O", "yamada@koichi.com", 47);
+insert into user (name, age, blood, email) values ('鈴木一郎', 37, 'A', 'sample1@sample1.com');
+insert into user (id, name, age, blood, email) values (null, '佐藤花子', 32, 'AB', 'sample2@sample2.com');
+insert into user (name, age, blood, email) values ('高橋健一', 48, 'B', 'sample3@sample3.com');
+insert into user (id, name, blood, email, age) values (4, '佐々木大輔', 'O', 'sample4@sample4.com', 27);
+insert into user values (5, '木原大輔', 41, 'AB', 'sample5@sample5.com');
+-- insert into user values (5, '木原大輔', 41, 'AB', 'sample5@sample5.com');
+-- insert into user values ('大山洋次郎', 38, 'B', 'sample6@sample6.com');
 
-source add_tables_samples.sql
+-- source add_tables_samples.sql
