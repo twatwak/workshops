@@ -7,9 +7,9 @@ isset($_GET["name"]) ? $name = $_GET["name"] : $name = "";
 
 try {
 	$pdo = new PDO($dsn, $user, $password);
-	$sql = "select * from user where name=?";
+	$sql = "select * from user where name like ?";
 	$pstmt = $pdo->prepare($sql);
-	$pstmt->bindValue(1, $name);
+	$pstmt->bindValue(1, "%$name%");
 	$pstmt->execute();
 	$records = [];
 	$records = $pstmt->fetchAll(PDO::FETCH_ASSOC);
@@ -29,7 +29,7 @@ try {
 	<body>
 		<h1>動的SQLを実行するプログラム</h1>
 		<div class="entry">
-			<form action="search_by_name.php" method="get">
+			<form action="find_by_name.php" method="get">
 				<label for="id_name">検索する名前 
 				<input typr="text" id="id_name" name="name" />
 				</label>

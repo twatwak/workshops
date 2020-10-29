@@ -10,7 +10,7 @@ try {
 		
     $pstmt->execute();
     $records = [];
-    $records = $pstmt->fetchAll(PDO::ASSOC);
+    $records = $pstmt->fetchAll(PDO::FETCH_ASSOC);
     unset($pstmt);
 		unset($pdo);
 		
