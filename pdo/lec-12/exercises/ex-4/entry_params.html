@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>画面遷移を伴う検索結果を表示する - レコードの登録</title>
+  <!-- このスタイル指定は省略可 -->
+  <style>
+    th, th {padding: 0.25rem 0.75rem;}
+    th {color: lightgray;background-color: dimgray;}
+    td {padding: 0.25rem 0.50rem;}
+    td[colspan="2"] {padding: 0.75rem;text-align: center;}
+    label {margin: 0; margin-right: 0.75rem;}
+    input[type="radio"] {margin-right: 0;}
+  </style>
+</head>
+<body>
+  <h1>画面遷移を伴う検索結果を表示する</h1>
+  <h2>レコードの登録</h2>
+  <p>各項目を入力してください。</p>
+  <form action="insert_record.php" method="post">
+    <table border="1">
+      <tr>
+        <th>氏名</th>
+        <td><input type="text" name="name" /></td>
+      </tr>
+      <tr>
+        <th>年齢</th>
+        <td><input type="number" name="age" /></td>
+      </tr>
+      <tr>
+        <th>血液型</th>
+        <td>
+            <input type="radio" id="id_a" name="blood" value="A" />
+            <label for="id_a">A</label>
+            <input type="radio" id="id_b" name="blood" value="B" />
+            <label for="id_b">B</label>
+            <input type="radio" id="id_o" name="blood" value="O" />
+            <label for="id_o">O</label>
+            <input type="radio" id="id_ab" name="blood" value="AB" />
+            <label for="id_ab">AB</label>
+        </td>
+      </tr>
+      <tr>
+        <th>電子メール</th>
+        <td><input type="text" name="email" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="登録する"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
