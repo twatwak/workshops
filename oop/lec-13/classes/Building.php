@@ -53,7 +53,7 @@ class Building {
      * 諸元を取得する。
      * @return string 諸元：「（建物名）の高さは（建物の高さ）mです。」という文字列を返す
      */
-    function getSpec():string {
+    function createSpec():string {
         $spec = "{$this->name}の高さは{$this->height}mです。";
         return $spec;
     }

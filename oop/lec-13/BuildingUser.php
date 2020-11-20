@@ -23,17 +23,17 @@ $buildings[] = new Building("ペニンシュラ東京", 111);
   <h1>Buildingクラスを使ってみる</h1>
   <p>個別にインスタンス化して諸元を表示する。</p>
   <ol>
-    <li><?= $sunshine->getSpec() ?></li>
+    <li><?= $sunshine->createSpec() ?></li>
     <!-- サンシャイン６０の高さは240mです。 -->
-    <li><?= $cityBuilding->getSpec() ?></li>
+    <li><?= $cityBuilding->createSpec() ?></li>
     <!-- 東京都庁の高さは239mです。-->
-    <li><?= $marunouchi->getSpec() ?></li>
+    <li><?= $marunouchi->createSpec() ?></li>
     <!-- 丸ビルの高さは179mです。-->
   </ol>
   <p>Buildingクラスの配列を作成して諸元を表示する。</p>
   <ol>
     <?php foreach ($buildings as $building): ?>
-    <li><?= $building->getSpec() ?></li>
+    <li><?= $building->createSpec() ?></li>
     <?php endforeach; ?>
     <!--
     <li>NTTドコモタワービルの高さは239mです。</li>
