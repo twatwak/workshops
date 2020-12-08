@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<title>確認画面 - データベースとクラス</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>データベースとクラス</h1>
+	<section id="confirm">
+		<h2>削除メンバーの確認</h2>
+		<form name="member_confirm">
+		<table>
+			<tr>
+				<th>ID</th>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>氏名</th>
+				<td>村　史彦</td>
+			</tr>
+			<tr>
+				<th>年齢</th>
+				<td>54 歳</td>
+			</tr>
+			<tr>
+				<th>血液型</th>
+				<td>A 型</td>
+			</tr>
+			<tr>
+				<th>電子メール</th>
+				<td>village@sample.com</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="hidden" name="id" value="6" />
+					<button formaction="complete.html" formmethod="post" name="action" value="delete">削除</button>
+				</td>
+			</tr>
+		</table>
+		</form>
+	</section>
+</body>
+</html>

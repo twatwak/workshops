@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<title>データベースとクラス</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>データベースとクラス</h1>
+	<div id="wrapper">
+	<section id="entry">
+		<h2>新規ユーザの登録</h2>
+				<form name="member_entry">
+		<table>
+			<tr>
+				<th>ID</th>
+				<td>
+					<input type="hidden" name="id" value="6" />
+					6
+				</td>
+			</tr>
+			<tr>
+				<th>氏名</th>
+				<td><input type="text" name="name" value="村　史彦" /></td>
+			</tr>
+			<tr>
+				<th>年齢</th>
+				<td><input type="text" name="age" value="54" /></td>
+			</tr>
+			<tr>
+				<th>血液型</th>
+				<td>
+					<select name="blood">
+						<option id="id_a" value="A" selected><label for="id_a">A型</label></option>
+						<option id="id_b" value="B" ><label for="id_b">B型</label></option>
+						<option id="id_o" value="O" ><label for="id_o">O型</label></option>
+						<option id="id_ab" value="AB" ><label for="id_ab">AB型</label></option>
+					</select>
+				</td>
+				
+			</tr>
+			<tr>
+				<th>電子メール</th>
+				<td><input type="text" name="email" value="village@sample.com" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button formaction="confirm.html" formmethod="post" name="action" value="update">更新</button>
+					<button type="reset">リセット</button>
+				</td>
+			</tr>
+		</table>
+		</form>
+	</section>
+	</div>
+</body>
+</html>
