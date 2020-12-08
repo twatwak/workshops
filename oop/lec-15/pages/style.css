@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* トップページのグリッド設定 */
+#wrapper {
+	display: grid;
+	grid-template-rows: 1;
+	grid-template-columns: 0.3fr 0.7fr;
+}
+/* 入力領域のグリッド */
+#entry {
+	grid-row: 1;
+	grid-column: 1;
+}
+/* 一覧表示領域のグリッド */
+#list {
+	grid-row: 1;
+	grid-column: 2;
+}
+
+body {
+	color: dimgray;
+	padding: 2.75rem;
+	padding-top: 1.25rem;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.25rem;
+}
+h2:before {
+	content: "【";
+}
+h2:after {
+	content: "】";
+}
+
+/* テーブルのセルのスタイル */
+th, td {
+	padding: 0.50rem 0.75rem;
+}
+th {
+	color: lightgray;
+	background-color:dimgray;
+}
+td {
+	background-color: lightgray;
+}
+
+/* IDのセルのスタイル：右寄せ */
+td:first-child {
+	text-align: right;
+}
+
+/* ボタンが表示されるセルのスタイル */
+td[colspan="2"] {
+	background-color: white;
+	padding: 0.75rem 0;
+	text-align: center;
+}
+
+/* 血液型のラベルの余白 */
+label {
+	margin-right: 0.25rem;
+}
+

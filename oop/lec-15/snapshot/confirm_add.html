@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<title>確認画面 - データベースとクラス</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>データベースとクラス</h1>
+	<section id="confirm">
+		<h2>登録メンバーの確認</h2>
+		<form name="member_confirm">
+		<table>
+			<tr>
+				<th>氏名</th>
+				<td>村　史彦</td>
+			</tr>
+			<tr>
+				<th>年齢</th>
+				<td>54 歳</td>
+			</tr>
+			<tr>
+				<th>血液型</th>
+				<td>A 型</td>
+			</tr>
+			<tr>
+				<th>電子メール</th>
+				<td>cameldroid@gmail.com</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<!-- 次の画面で利用するためhidden要素として非表示にする -->
+					<input type="hidden" name="id" value="0" />
+					<input type="hidden" name="name" value="村　史彦" />
+					<input type="hidden" name="age" value="54" />
+					<input type="hidden" name="blood" value="A" />
+					<input type="hidden" name="email" value="cameldroid@gmail.com" />
+					<button formaction="complete.html" formmethod="post" name="action" value="entry">登録</button>
+				</td>
+			</tr>
+		</table>
+		</form>
+	</section>
+</body>
+</html>
