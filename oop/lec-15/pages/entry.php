@@ -6,6 +6,7 @@ require_once "User.php";
 <?php
 /* 1. userテーブルのレコードを全件取得する */
 $users = [];   // userテーブルの全県検索結果を格納する配列
+$pdo= null;
 $pstmt = null; // SQL実行オブジェクトの初期化
 try {
 	// 1-1. データベース接続オブジェクトをインスタンス化
@@ -100,7 +101,7 @@ try {
 			<tr>
 				<td><?= $user->getId() ?></td>
 				<td><?= $user->getName() ?></td>
-				<td><?= $user->getAGe() ?> 歳</td>
+				<td><?= $user->getAge() ?> 歳</td>
 				<td><?= $user->getBlood() ?> 型</td>
 				<td><?= $user->getEmail() ?></td>
 				<td>
